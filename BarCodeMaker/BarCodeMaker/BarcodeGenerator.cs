@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace BarCodeMaker
 {
-    public partial class Form1 : Form
+    public partial class BarcodeGenerator : Form
     {
         Image File;
-        public Form1()
+        public BarcodeGenerator()
         {
             InitializeComponent();
         }
