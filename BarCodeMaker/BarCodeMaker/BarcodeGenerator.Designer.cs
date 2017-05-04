@@ -41,8 +41,6 @@
             this.txtBarcode = new System.Windows.Forms.TextBox();
             this.btnBarcode = new System.Windows.Forms.Button();
             this.btnQRCode = new System.Windows.Forms.Button();
-            this.txtQRCode = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
@@ -116,22 +114,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 299);
+            this.label1.Location = new System.Drawing.Point(12, 293);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Barcode:";
+            this.label1.Text = "Barcode or QRCode:";
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(81, 296);
+            this.txtBarcode.Location = new System.Drawing.Point(15, 313);
+            this.txtBarcode.Multiline = true;
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(227, 22);
+            this.txtBarcode.Size = new System.Drawing.Size(293, 51);
             this.txtBarcode.TabIndex = 2;
             // 
             // btnBarcode
             // 
-            this.btnBarcode.Location = new System.Drawing.Point(314, 296);
+            this.btnBarcode.Location = new System.Drawing.Point(314, 313);
             this.btnBarcode.Name = "btnBarcode";
             this.btnBarcode.Size = new System.Drawing.Size(75, 23);
             this.btnBarcode.TabIndex = 3;
@@ -141,29 +140,13 @@
             // 
             // btnQRCode
             // 
-            this.btnQRCode.Location = new System.Drawing.Point(314, 324);
+            this.btnQRCode.Location = new System.Drawing.Point(314, 341);
             this.btnQRCode.Name = "btnQRCode";
             this.btnQRCode.Size = new System.Drawing.Size(75, 23);
             this.btnQRCode.TabIndex = 6;
             this.btnQRCode.Text = "QRCode";
             this.btnQRCode.UseVisualStyleBackColor = true;
             this.btnQRCode.Click += new System.EventHandler(this.btnQRCode_Click);
-            // 
-            // txtQRCode
-            // 
-            this.txtQRCode.Location = new System.Drawing.Point(81, 324);
-            this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.Size = new System.Drawing.Size(227, 22);
-            this.txtQRCode.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 327);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "QRCode:";
             // 
             // pictureBox
             // 
@@ -180,11 +163,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(403, 362);
+            this.ClientSize = new System.Drawing.Size(403, 375);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnQRCode);
-            this.Controls.Add(this.txtQRCode);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBarcode);
             this.Controls.Add(this.txtBarcode);
             this.Controls.Add(this.label1);
@@ -215,8 +196,6 @@
         private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Button btnBarcode;
         private System.Windows.Forms.Button btnQRCode;
-        private System.Windows.Forms.TextBox txtQRCode;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox;
     }
 }

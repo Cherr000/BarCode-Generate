@@ -28,7 +28,7 @@ namespace BarCodeMaker
         private void btnQRCode_Click(object sender, EventArgs e)
         {
             Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            pictureBox.Image = qrcode.Draw(txtQRCode.Text, 50);
+            pictureBox.Image = qrcode.Draw(txtBarcode.Text, 50);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
